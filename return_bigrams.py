@@ -101,10 +101,13 @@ def sayRandomPhrase(listOfStrings, times):
 # writeTxtFile("text.txt", thesis)
 thesis = readTxtFile("thesis-drafts/thesis_20.txt")
 thesis_tokens = tokenize(thesis)
-# thesis_bigrams = createBigrams(tokenize(thesis))
+
 # print(thesis_bigrams)
-thesis_trigrams = returnBigramFreqs(tokenize(thesis))
+thesis_bigrams = returnBigramFreqs(returnBigrams(tokenize(thesis)))
+thesis_trigrams = returnTrigramFreqs(returnTrigrams(tokenize(thesis)))
 print(thesis_trigrams)
+print(thesis_bigrams)
+
 """
 while(True):
     sayRandomPhrase(returnNGrams(thesis_tokens, 6), 40)
