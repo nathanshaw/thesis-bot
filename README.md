@@ -1,2 +1,3 @@
 # thesis-bot
-A python script for creating art from my Thesis.
+A collection of python scripts that use my MFA thesis, as source material.
+
